@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import '../Navbar/Navbar.css';
+import React, { Component } from "react";
+import "../Navbar/Navbar.css";
 import IcecreamImg from "../../images/IcecreamBanner.png";
 import DonutImg from "../../images/DonutsBanner.png";
 import FamilyCorporateImg from "../../images/FamilyCorporateBanner.png";
@@ -8,18 +8,12 @@ function Cards() {
   return (
     <div className="wrapper">
       <Card
-        img = {IcecreamImg}
+        img={IcecreamImg}
         title="Icecream and gelato"
         button="Explore Options"
-        
       />
 
-      <Card
-        img={DonutImg}
-        title="Delicious Donuts"
-        button="Explore Options"
-
-      />
+      <Card img={DonutImg} title="Delicious Donuts" button="Explore Options" />
 
       <Card
         img={FamilyCorporateImg}
@@ -41,7 +35,5 @@ function Card(props) {
     </div>
   );
 }
-
-
 
 export default Cards;
