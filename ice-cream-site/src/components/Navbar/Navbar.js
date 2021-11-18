@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { MenuItems } from "./MenuItems";
 //import { MenuItemsRight } from "./MenuItemsRight";
 import "./Navbar.css";
@@ -28,6 +28,7 @@ class Navbar extends Component {
             className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
           ></i>
         </div>
+
         <div className="LeftItemsNav">
           <img
             className="navbar-logo"
@@ -52,13 +53,13 @@ class Navbar extends Component {
           <ul className="users-actions">
             <li>
               <a className="user-action">
-                <img src={UserIcon} alt="" />
+                <img src={UserIcon} alt="user icon" />
                 Account
               </a>
             </li>
             <li>
               <a className="user-action">
-                <img src={BasketIcon} alt="" />
+                <img src={BasketIcon} alt="basket icon" />
                 Basket
               </a>
             </li>
